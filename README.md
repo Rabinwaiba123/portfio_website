@@ -2,8 +2,7 @@
 
 A clean, mobile‑friendly single‑page site to showcase your projects, skills, and contact info.
 
-**Live demo:** _(add GitHub Pages/Netlify/Vercel link once deployed)_
-
+**Live demo:** [https://rabinwaiba123.github.io/portfio_website/](https://rabinwaiba123.github.io/portfio_website/)
 ---
 
 ## ✨ Features
