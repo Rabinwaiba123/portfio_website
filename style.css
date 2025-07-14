@@ -1,0 +1,161 @@
+/* 1—Base reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent: #ffb400;          /* change to your brand color */
+  --dark: #1d1d1d;
+  --light: #f7f7f7;
+  --max-width: 1100px;
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--light);
+}
+
+/* 2—Utilities */
+.container {
+  width: min(var(--max-width), 90%);
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* 3—Nav */
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* 4—Sections */
+section {
+  padding: 4rem 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--accent) 0%, #ffde7d 100%);
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.about .split {
+  display: grid;
+  gap: 2rem;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 5—Projects */
+.projects .grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h4 {
+  margin-bottom: 0.25rem;
+}
+
+/* 6—Contact */
+.contact {
+  background: #fff;
+  text-align: center;
+}
+
+.contact a { color: var(--accent); }
+
+/* 7—Footer */
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+/* 8—Responsive tweaks */
+@media (min-width: 700px) {
+  .about .split {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

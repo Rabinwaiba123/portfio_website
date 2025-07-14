@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Header / Nav ─────────────────────────── -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo"><a href="#home">Rabin</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero Section ─────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hello, I’m Rabin 👋</h2>
+      <p>Software / Data specialist who loves turning ideas into code.</p>
+      <a class="btn" href="#projects">See My Work</a>
+    </div>
+  </section>
+
+  <!-- ── About Section ────────────────────────── -->
+  <section id="about" class="about">
+    <div class="container split">
+      <img src="https://via.placeholder.com/350" alt="Profile picture" />
+      <div>
+        <h3>About Me</h3>
+        <p>
+          Short bio—what you do, what excites you, your tech stack, etc.
+        </p>
+        <p>
+          Add a few highlights (open‑source, freelance, awards).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects Section ─────────────────────── -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="grid">
+        <!-- Copy this card for more projects -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400" alt="Project screenshot" />
+          <div class="card-body">
+            <h4>Project Title</h4>
+            <p>One‑sentence summary of what this project does.</p>
+            <a href="#" target="_blank">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact Section ──────────────────────── -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h3>Let’s Work Together</h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────── -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Rabin • All rights reserved
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
