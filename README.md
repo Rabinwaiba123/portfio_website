@@ -2,7 +2,7 @@
 
 A clean, mobile‑friendly single‑page site to showcase your projects, skills, and contact info.
 
-**Live demo:** [https://rabinwaiba123.github.io/portfio_website/](https://rabinwaiba123.github.io/portfio_website/)
+**Live demo:** [https://rabinwaiba123.github.io/portfolio_website/](https://rabinwaiba123.github.io/portfolio_website/)
 ---
 
 ## ✨ Features
