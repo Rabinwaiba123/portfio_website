@@ -17,7 +17,7 @@ A clean, mobile‑friendly single‑page site to showcase your projects, skills,
 
 ```bash
 # 1. Clone the repo
-git clone gh repo clone Rabinwaiba123/portfolio_website
+git clone https://github.com/Rabinwaiba123/portfolio_website.git
 cd portfolio
 
 # 2. (Optional) Serve locally with Live Server or any static server
